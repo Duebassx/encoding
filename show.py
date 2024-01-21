@@ -17,7 +17,7 @@ num_steps = 100
 
 # 对图片进行编码
 Spike_image_data = Encoder.PoissonEncoding(image_tensor, num_steps)
-#Spike_image_data = Encoder.TimeToFirstSpike(image_tensor, num_steps, tau=5, threshold=0.1, bias=1e-4, normalize=False, linear=False)
+#Spike_image_data = Encoder.TimeToFirstSpike(image_tensor, num_steps, tau=5, threshold=0.1, bias=1e-7, normalize=False, linear=False)
 #Spike_image_data = Encoder.WeightedPhase(image_tensor, num_steps, 8)
 #Spike_image_data = Encoder.BurstSpike(image_tensor, num_steps)
 
