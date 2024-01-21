@@ -22,13 +22,13 @@ Spike_image_data = Encoder.PoissonEncoding(image_tensor, num_steps)
 #Spike_image_data = Encoder.BurstSpike(image_tensor, num_steps)
 
 # 展示散点图
-#Encoder.SpikeShowScatter(Spike_image_data[:, 2], num_steps)
+Encoder.SpikeShowScatter(Spike_image_data, num_steps)
 
 # 展示动态图
 #ani = Encoder.SpikeShowDynamic(Spike_image_data, num_steps=num_steps, interval=50)
 
 # 所有时间步长的脉冲累加后重建得到的图像
-Encoder.SpikeShowReconv(Spike_image_data)
+#Encoder.SpikeShowReconv(Spike_image_data)
 
 # 在Jupyter Notebook中显示动画
 #HTML(ani.to_jshtml())
